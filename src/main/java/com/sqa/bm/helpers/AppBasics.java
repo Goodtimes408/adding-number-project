@@ -7,6 +7,8 @@
  */
 package com.sqa.bm.helpers;
 
+import java.util.*;
+
 /**
  * AppBasics //ADDD (description of class)
  * <p>
@@ -19,9 +21,14 @@ package com.sqa.bm.helpers;
  * @since 1.0
  */
 public class AppBasics {
-	}
 
 	static Scanner scanner = new Scanner(System.in);
+
+	public static void farwellUser(String userName, String appName) {
+		// TODO Auto-generated method stub
+		System.out.println("Thank you for using the " + appName + " application");
+		System.out.println("Have a good day " + userName);
+	}
 
 	public static String greetUserAndGetName(String nameOfApp) {
 		System.out.println("Hello, Welcome to the " + nameOfApp + " App.");
@@ -29,11 +36,6 @@ public class AppBasics {
 		System.out.print("Could I please get your name? ");
 		// println add carriage return or \n"//
 		return scanner.nextLine();
-		// nextLine is a method //
-
-	public static void farwellUser(String userName, String appName) {
-		// TODO Auto-generated method stub
-		System.out.println("Thank you for using the " + appName + " application");
-		System.out.println("Have a good day " + userName);
 	}
+	// nextLine is a method //
 }
